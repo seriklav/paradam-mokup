@@ -213,6 +213,22 @@ body, html {
 	}
 }
 
+@media (max-height : 550px) {
+	.navigation li img {
+		width: 45px;
+		height: 45px;
+	}
+	.navigation li {
+		padding: 0 10px;
+	}
+	.discover-people {
+		margin: 0 0 5px 0;
+	}
+	.discover-header {
+		margin: 5px 0 5px 19px;
+	}
+}
+
 @media (max-width: 352px) {
 	.discover-people .discover-people-item .people-logo, .discover-people .discover-people-item .people-logo img{
 		width: 60px;
