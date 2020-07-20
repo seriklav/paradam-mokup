@@ -126,6 +126,7 @@ body, html {
 	font-weight: 500;
 	width: 100px;
 	margin: 0 auto;
+	text-align: center;
 }
 .discover-service-wrapper .discover-service-item .discover-service-item-description {
 	font-weight: 500;
