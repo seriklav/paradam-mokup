@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(document).on('click', '#mobile-menu', function(){
         $('.left-navigation').toggleClass('active');
     });
-    $(document).on('click touch', '#mask-content', function(){
+    $(document).on('click touchstart', '#mask-content', function(){
         $('.left-navigation').removeClass('active');
     });
 
@@ -12,7 +12,7 @@ $(document).ready(function(){
     swipedetect(el, function(position){
         // swipedir contains either "none", "left", "right", "top", or "down"
         if (position === 'left') {
-            $('.left-navigation').toggleClass('active');
+            $('.left-navigation').removeClass('active');
         }
     })
 })
