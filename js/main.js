@@ -2,10 +2,7 @@ $(document).ready(function(){
     $(document).on('click', '#mobile-menu', function(){
         $('.left-navigation').toggleClass('active');
     });
-    $(document).on('click', '.left-navigation', function(e){
-        e.stopPropagation();
-    });
-    $(document).click(function(){
+    $(document).on('click touch', '#mask-content', function(){
         $('.left-navigation').removeClass('active');
     });
 
