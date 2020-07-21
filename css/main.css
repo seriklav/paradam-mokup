@@ -12,6 +12,11 @@ body, html {
 	font-size: 18px;
 	color: #fff;
 }
+a, a:focus, a:active {
+	outline: none;
+	text-decoration: none;
+	color: #fff;
+}
 .wrapper {
 	background: -o-radial-gradient(center,circle,#666,#000);
 	background: radial-gradient(circle at center,#666,#000);
@@ -38,6 +43,115 @@ body, html {
 	border-radius: 50%;
 }
 
+/* Navigation */
+.left-navigation {
+	width: 280px;
+	min-width: 280px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	left: -320px;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+	background: -o-radial-gradient(center,circle,#666,#000);
+	background: radial-gradient(circle at center,#666,#000);
+	z-index: 2000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.left-navigation > ul {
+	display: block;
+	margin: 15px 0 0 20px;
+	padding: 0;
+	list-style: none;
+}
+
+.left-navigation > ul > li {
+	margin-bottom: 40px;
+}
+
+.left-navigation > ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.left-navigation > ul > li > a {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.left-navigation.active {
+	left: 0;
+	overflow-y: auto;
+}
+
+.left-navigation .left-navigation-balance {
+	background: radial-gradient(50% 743.88% at 50% 50%, #4D4D4D 0%, #000000 100%);
+	border: 1px solid #2F2F2F;
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	padding: 13px;
+	margin: 0 10px;
+}
+.left-navigation .left-navigation-balance .left-navigation-balance-amount {
+	color: #7FFF00;
+}
+.left-navigation .left-navigation-balance .left-navigation-balance-currency {
+	color: #747373;
+	font-weight: 300;
+}
+
+.left-navigation .left-navigation-user {
+	margin: 0 10px;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 40px;
+}
+
+.left-navigation .left-navigation-user .left-navigation-user-logo {
+	margin-right: 10px;
+}
+
+.left-navigation .left-navigation-user .left-navigation-user-logo img {
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+}
+.left-navigation .left-navigation-user .left-navigation-user-full-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+.left-navigation .left-navigation-user .left-navigation-username {
+	color: #747373;
+}
+
+.mask-content {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.left-navigation.active + .mask-content {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s, visibility 0.5s;
+	transition: opacity 0.5s, visibility 0.5s;
+}
+/* End Navigation */
+
 /* Helper */
 .button_black {
 	background: -o-radial-gradient(center,circle,#666,#000);
@@ -48,7 +162,7 @@ body, html {
 }
 
 /* DISCOVER */
-.discover-header {
+.header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -62,10 +176,10 @@ body, html {
 	height: 45px;
 	border-radius: 50%;
 }
-.discover-title {
+.header-logo {
 	font-size: 28px;
 }
-.discover-title:first-letter{
+.header-logo:first-letter{
 	color: #7fff00;
 }
 .discover-sub-title {
@@ -147,7 +261,7 @@ body, html {
 	margin-right: 10px;
 }
 
-.discover-footer {
+.footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -189,7 +303,7 @@ body, html {
 	.discover-people {
 		margin: 0 0 5px 0;
 	}
-	.discover-header {
+	.header {
 		margin: 5px 0 5px 19px;
 	}
 }
@@ -224,7 +338,7 @@ body, html {
 	.discover-people {
 		margin: 0 0 5px 0;
 	}
-	.discover-header {
+	.header {
 		margin: 5px 0 5px 19px;
 	}
 }

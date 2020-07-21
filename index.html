@@ -11,12 +11,47 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="discover-header">
-			<div class="discover-logo">
+		<header class="header">
+			<div class="discover-logo" id="mobile-menu">
 				<img src="./img/logo/1.jpg" />
 			</div>
-			<div class="discover-title">Paradam.me</div>
-		</div>
+			<div class="header-logo">Paradam.me</div>
+		</header>
+
+		<nav class="left-navigation">
+			<ul>
+				<li>
+					<a href="#">Профиль</a>
+				</li>
+				<li>
+					<a href="#">Понравившиеся</a>
+				</li>
+				<li>
+					<a href="#">Закладки</a>
+				</li>
+				<li>
+					<a href="#">Настройки</a>
+				</li>
+				<li>
+					<a href="#">Справочный центр</a>
+				</li>
+			</ul>
+
+			<div class="left-navigation-balance">
+				Баланс <span class="left-navigation-balance-amount">8500</span> <span class="left-navigation-balance-currency">Кредитов</span>
+			</div>
+
+			<div class="left-navigation-user">
+				<div class="left-navigation-user-logo">
+					<img src="./img/logo/1.jpg" />
+				</div>
+				<div class="left-navigation-user-full-name">
+					Ярослав Плевако
+					<span class="left-navigation-username">theone_theone</span>
+				</div>
+			</div>
+		</nav>
+		<div class="mask-content" id="mask-content"></div>
 
 		<div class="discover-sub-title">
 			Отправляйте сообщения
@@ -250,18 +285,46 @@
 			</div>
 		</div>
 
-		<div class="discover-footer">
+		<footer class="footer">
 			<ul class="navigation">
 				<li><a href="#"><img src="./img/nav/discover-active.svg" /></a></li>
 				<li><a href="#"><img src="./img/nav/search.svg" /></a></li>
 				<li><a href="#"><img src="./img/nav/mail.svg" /></a></li>
 				<li><a href="#"><img src="./img/nav/send.svg" /></a></li>
 			</ul>
-		</div>
+		</footer>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script>
+        (function() {
+            var h, a, f;
+            a = document.getElementsByTagName('link');
+            for (h = 0; h < a.length; h++) {
+                f = a[h];
+                if (f.rel.toLowerCase().match(/stylesheet/) && f.href) {
+                    var g = f.href.replace(/(&|\?)rnd=\d+/, '');
+                    f.href = g + (g.match(/\?/) ? '&' : '?');
+                    f.href += 'rnd=' + (new Date().valueOf());
+                }
+            } // for
+        })();
+        (function() {
+            var h, a, f;
+            a = document.getElementsByTagName('script');
+            for (h = 0; h < a.length; h++) {
+                f = a[h];
+                if (f.src) {
+                    var g = f.src.replace(/(&|\?)rnd=\d+/, '');
+                    f.src = g + (g.match(/\?/) ? '&' : '?');
+                    f.src += 'rnd=' + (new Date().valueOf());
+                }
+            } // for
+        })()
+	</script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script src="./js/lib/slick/slick.js"></script>
+	<script src="./js/lib/swipe/swipe.js"></script>
+	<script src="./js/main.js"></script>
 	<script type="text/javascript">
         $(document).ready(function(){
             $('.discover-people').slick({
