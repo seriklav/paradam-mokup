@@ -10,26 +10,6 @@
 	<link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-<p>Ширина видимой области просмотра (widthContenArea): <span id="widthContenArea" style="color: #000;"></span></p>
-<p>Ширина видимой области просмотра (heightContenArea): <span id="heightContenArea" style="color: #000;"></span></p>
-<script>
-    // ширина видимой области просмотра (для всех браузеров, кроме Internet Explorer 8)
-    var widthContenArea = window.innerWidth;
-    // высота видимой области просмотра (для всех браузеров, кроме Internet Explorer 8)
-    var heightContenArea = window.innerHeight;
-    // ширина видимой области просмотра (для Internet Explorer 8)
-    widthContenArea = document.documentElement.clientWidth || document.body.clientWidth;
-    // высота видимой области просмотра (для Internet Explorer 8)
-    heightContenArea = document.documentElement.clientHeight || document.body.clientHeight;
-    // ширина видимой области просмотра (для всех браузеров)
-    widthContenArea1 = window.innerWidth || document.documentElement.clientWidth ||
-        document.body.clientWidth;
-    // высота видимой области просмотра (для всех браузеров)
-    heightContenArea1 = window.innerHeight || document.documentElement.clientHeight ||
-        document.body.clientHeight;
-    document.getElementById("widthContenArea").innerHTML = widthContenArea;
-    document.getElementById("heightContenArea").innerHTML = heightContenArea;
-</script>
 	<div class="wrapper">
 		<header class="header">
 			<div class="discover-logo" id="mobile-menu">

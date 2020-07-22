@@ -195,8 +195,7 @@ ul,li {
 }
 
 .discover-people .discover-people-item .people-logo img {
-	width: 80px;
-	height: 80px;
+	width: 100%;
 	outline: none;
 	border-radius: 50%;
 	margin: 0 auto;
@@ -235,16 +234,17 @@ ul,li {
 .discover-service-wrapper .discover-service-item .discover-service-item-header {
 	display: flex;
 	flex-direction: row;
-	padding: 8px 10px 7px 10px;
+	padding: 8px 10px 0 10px;
 }
 
 .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-logo {
 	margin-right: 10px;
+	height: 45px;
+	width: 45px;
 }
 
 .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-logo img {
-	height: 45px;
-	width: 45px;
+	width: 100%;
 	border-radius: 50%;
 }
 
@@ -262,7 +262,7 @@ ul,li {
 }
 
 .discover-service-wrapper .discover-service-item .discover-service-item-footer {
-	margin-bottom: 20px;
+	margin-bottom: 2px;
 	font-weight: 300;
 	font-size: 22px;
 	display: flex;
@@ -348,6 +348,53 @@ ul,li {
 	}
 	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
 		font-size: 15px;
+	}
+}
+
+@media (max-height: 525px) {
+	.discover-sub-title {
+		font-size: 16px;
+	}
+	.discover-people {
+		margin: 10px 0 5px 0;
+	}
+	.discover-people .discover-people-item .people-logo {
+		width: 60px;
+		height: 60px;
+	}
+	.discover-people .discover-people-item .people-name {
+		font-size: 16px;
+	}
+	.discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-logo {
+		height: 35px;
+		width: 35px;
+	}
+	.discover-service-wrapper .discover-service-item .discover-service-item-description, .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-name {
+		font-size: 14px;
+	}
+	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
+		font-size: 18px;
+	}
+	.footer .navigation li a img {
+		width: 55px;
+		height: 55px;
+	}
+}
+
+@media (max-height: 445px) {
+	.discover-service-wrapper .discover-service-wrapper-item-block {
+		height: 33vh;
+		padding-top: inherit; /* 1:1 Aspect Ratio */
+		position: static;
+	}
+
+	.discover-service-wrapper .discover-service-item {
+		position: static;
+	}
+}
+@media (max-height: 408px) {
+	body, html {
+		opacity: 0;
 	}
 }
 
