@@ -260,7 +260,7 @@ a, a:focus, a:active {
 }
 .navigation li {
 	list-style: none;
-	padding: 10px;
+	padding: 0 10px;
 }
 
 /* HELPER */
