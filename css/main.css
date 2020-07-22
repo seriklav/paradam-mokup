@@ -11,17 +11,26 @@ body, html {
 	font-weight: 300;
 	font-size: 18px;
 	color: #fff;
+	height:100%;
+	padding:0;
+	margin:0;
 }
 a, a:focus, a:active {
 	outline: none;
 	text-decoration: none;
 	color: #fff;
 }
+ul,li {
+	list-style: none;
+	margin: 0;
+}
 .wrapper {
 	background: -o-radial-gradient(center,circle,#666,#000);
 	background: radial-gradient(circle at center,#666,#000);
 
-	height: calc(100vh - 100px);
+	height: -moz-calc(100% - 100px);
+	height: -webkit-calc(100% - 100px);
+	height: calc(100% - (20px + 30100));
 
 	overflow: hidden;
 	padding: 50px 0;
@@ -255,12 +264,9 @@ a, a:focus, a:active {
 }
 
 .navigation {
+	padding: 0 10px;
 	display: flex;
 	justify-content: space-between;
-}
-.navigation li {
-	list-style: none;
-	padding: 0 10px;
 }
 
 /* HELPER */
@@ -290,9 +296,6 @@ a, a:focus, a:active {
 }
 
 @media (min-height: 620px) and (max-height: 690px) {
-	.navigation li {
-		padding: 0 10px;
-	}
 	.show-in-big-device {
 		display: block;
 	}
@@ -327,9 +330,6 @@ a, a:focus, a:active {
 	.navigation li img {
 		width: 45px;
 		height: 45px;
-	}
-	.navigation li {
-		padding: 0 10px;
 	}
 	.discover-people {
 		margin: 0 0 5px 0;
