@@ -301,9 +301,12 @@ ul,li {
 /* MEDIA */
 
 @media (min-height: 620px) {
-	.show-in-big-device {
-		display: block;
-	}
+	/*.show-in-big-device {*/
+	/*	display: block;*/
+	/*}*/
+	/*.discover-service-wrapper-item-block {*/
+	/*	transform: scale(0.8);*/
+	/*}*/
 }
 
 @media (min-height: 620px) and (max-height: 690px) {
@@ -335,6 +338,12 @@ ul,li {
 	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
 		font-size: 18px;
 	}
+	.wrapper {
+		transform: scale(0.9);
+	}
+	/*.discover-service-wrapper-item-block {*/
+	/*	transform: scale(0.9);*/
+	/*}*/
 }
 
 @media (max-height : 550px) {
@@ -348,6 +357,12 @@ ul,li {
 	.header {
 		margin: 5px 0 5px 19px;
 	}
+	.wrapper {
+		transform: scale(0.7);
+	}
+	/*.discover-service-wrapper-item-block {*/
+	/*	transform: scale(0.7);*/
+	/*}*/
 }
 
 @media (max-width: 352px) {
@@ -367,6 +382,12 @@ ul,li {
 	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
 		font-size: 20px;
 	}
+	/*.wrapper {*/
+	/*	transform: scale(0.4);*/
+	/*}*/
+	/*.discover-service-wrapper-item-block {*/
+	/*	transform: scale(0.3);*/
+	/*}*/
 }
 
 @media (max-width: 338px) {
