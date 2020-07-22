@@ -212,6 +212,11 @@ ul,li {
 .discover-service-wrapper {
 
 }
+.discover-service-wrapper .discover-service-wrapper-item-block img {
+	max-width: 100%;
+	width: auto;
+	margin: 0 auto;
+}
 
 .discover-service-wrapper .discover-service-wrapper-item-block {
 	width: 170px;
