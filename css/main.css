@@ -20,30 +20,17 @@ a, a:focus, a:active {
 .wrapper {
 	background: -o-radial-gradient(center,circle,#666,#000);
 	background: radial-gradient(circle at center,#666,#000);
-	height: 100vh;
+
+	height: calc(100vh - 100px);
+
 	overflow: hidden;
-}
-
-.username {
-	padding: 10px 0;
-	text-align: center;
-	color: #fff;
-	font-size: 22px;
-}
-.header .user_information {
+	padding: 50px 0;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 
-.header .user_information .photo img {
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-}
-
-/* Navigation */
+/* NAVIGATION */
 .left-navigation {
 	width: 280px;
 	min-width: 280px;
@@ -99,9 +86,11 @@ a, a:focus, a:active {
 	padding: 13px;
 	margin: 0 10px;
 }
+
 .left-navigation .left-navigation-balance .left-navigation-balance-amount {
 	color: #7FFF00;
 }
+
 .left-navigation .left-navigation-balance .left-navigation-balance-currency {
 	color: #747373;
 	font-weight: 300;
@@ -123,10 +112,12 @@ a, a:focus, a:active {
 	width: 45px;
 	height: 45px;
 }
+
 .left-navigation .left-navigation-user .left-navigation-user-full-name {
 	font-size: 20px;
 	font-weight: bold;
 }
+
 .left-navigation .left-navigation-user .left-navigation-username {
 	color: #747373;
 }
@@ -150,19 +141,15 @@ a, a:focus, a:active {
 	-webkit-transition: opacity 0.5s, visibility 0.5s;
 	transition: opacity 0.5s, visibility 0.5s;
 }
-/* End Navigation */
-
-/* Helper */
-.button_black {
-	background: -o-radial-gradient(center,circle,#666,#000);
-	background: radial-gradient(circle at center,#666,#000);
-	padding: 5px;
-	border: 1px solid #fff;
-	border-radius: 5px;
-}
+/* END NAVIGATION */
 
 /* DISCOVER */
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -282,6 +269,15 @@ a, a:focus, a:active {
 	}
 	.show-in-big-device {
 		display: none;
+	}
+	.no-selected {
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none;   /* Chrome/Safari/Opera */
+		-khtml-user-select: none;    /* Konqueror */
+		-moz-user-select: none;      /* Firefox */
+		-ms-user-select: none;       /* Internet Explorer/Edge */
+		user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 	}
 /* END HELPER */
 
