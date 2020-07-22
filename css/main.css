@@ -187,11 +187,13 @@ ul,li {
 	margin: 10px 0 19px 0;
 	padding: 0 8px;
 }
+
 .discover-people .discover-people-item .people-logo {
 	width: 80px;
 	height: 80px;
 	margin: 0 auto;
 }
+
 .discover-people .discover-people-item .people-logo img {
 	width: 80px;
 	height: 80px;
@@ -210,38 +212,46 @@ ul,li {
 .discover-service-wrapper {
 
 }
+
 .discover-service-wrapper .slick-slide {
 	padding: 0 10px;
 }
+
 .discover-service-wrapper .discover-service-item {
 	border-radius: 15px;
 	padding: 0 8px;
 	background: radial-gradient(50% 743.88% at 50% 50%, #4D4D4D 0%, #000000 100%);
 	border: 1px solid #2F2F2F;
 }
+
 .discover-service-wrapper .discover-service-item .discover-service-item-header {
 	display: flex;
 	flex-direction: row;
 	padding: 8px 10px 7px 10px;
 }
+
 .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-logo {
 	margin-right: 10px;
 }
+
 .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-logo img {
 	height: 45px;
 	width: 45px;
 	border-radius: 50%;
 }
+
 .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-name {
 	font-weight: 500;
 	width: 100px;
 	margin: 0 auto;
 	text-align: center;
 }
+
 .discover-service-wrapper .discover-service-item .discover-service-item-description {
 	font-weight: 500;
 	font-size: 18px;
 	text-align: center;
+	padding: 15% 0;
 }
 
 .discover-service-wrapper .discover-service-item .discover-service-item-footer {
@@ -252,6 +262,7 @@ ul,li {
 	color: #ddd;
 	justify-content: center;
 }
+
 .discover-service-wrapper .discover-service-item .discover-service-item-footer .discover-service-item-price {
 	color: #7FFF00;
 	margin-right: 10px;
