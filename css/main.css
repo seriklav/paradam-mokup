@@ -9,7 +9,7 @@ body, html {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 4vw;
 	color: #fff;
 	height:100%;
 	padding:0;
@@ -179,7 +179,7 @@ ul,li {
 	color: #7fff00;
 }
 .discover-sub-title {
-	font-size: 20px;
+	font-size: 5.5vw;
 	font-weight: bold;
 	text-align: center;
 }
@@ -189,8 +189,7 @@ ul,li {
 }
 
 .discover-people .discover-people-item .people-logo {
-	width: 80px;
-	height: 80px;
+	width: 20vw;
 	margin: 0 auto;
 }
 
@@ -213,7 +212,9 @@ ul,li {
 }
 
 .discover-service-wrapper .discover-service-wrapper-item-block {
-
+	height: 2vh;
+	padding-top: 100%; /* 1:1 Aspect Ratio */
+	position: relative;
 }
 
 .discover-service-wrapper .slick-slide {
@@ -229,18 +230,23 @@ ul,li {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .discover-service-wrapper .discover-service-item .discover-service-item-header {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	padding: 8px 10px 0 10px;
 }
 
 .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-logo {
 	margin-right: 10px;
-	height: 45px;
-	width: 45px;
+	width: 15vw;
 }
 
 .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-logo img {
@@ -257,14 +263,13 @@ ul,li {
 
 .discover-service-wrapper .discover-service-item .discover-service-item-description {
 	font-weight: 500;
-	font-size: 18px;
 	text-align: center;
 }
 
 .discover-service-wrapper .discover-service-item .discover-service-item-footer {
 	margin-bottom: 2px;
 	font-weight: 300;
-	font-size: 22px;
+	font-size: 5vw;
 	display: flex;
 	color: #ddd;
 	justify-content: center;
@@ -307,94 +312,113 @@ ul,li {
 
 /* MEDIA */
 @media (max-width: 875px) {
-	.discover-service-wrapper .discover-service-wrapper-item-block {
-		height: 2vh;
-		padding-top: 100%; /* 1:1 Aspect Ratio */
-		position: relative;
-	}
+	/*.discover-service-wrapper .discover-service-wrapper-item-block {*/
+	/*	height: 2vh;*/
+	/*	padding-top: 100%; !* 1:1 Aspect Ratio *!*/
+	/*	position: relative;*/
+	/*}*/
 
-	.discover-service-wrapper .discover-service-item {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-	}
+	/*.discover-service-wrapper .discover-service-item {*/
+	/*	position: absolute;*/
+	/*	top: 0;*/
+	/*	left: 0;*/
+	/*	bottom: 0;*/
+	/*	right: 0;*/
+	/*}*/
 }
 
-@media (max-width: 398px) {
-	.discover-service-wrapper .discover-service-item .discover-service-item-description,
-	.discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-name {
-		 font-size: 16px;
-	}
-	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
-		font-size: 20px;
-	}
-}
+/*@media (max-width: 398px) {*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-description,*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-name {*/
+/*		 font-size: 16px;*/
+/*	}*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-footer {*/
+/*		font-size: 20px;*/
+/*	}*/
+/*}*/
 
-@media (max-width: 360px) {
-	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
-		font-size: 18px;
-	}
-}
+/*@media (max-width: 360px) {*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-footer {*/
+/*		font-size: 18px;*/
+/*	}*/
+/*}*/
 
-@media (max-width: 335px) {
-	.discover-service-wrapper .discover-service-item .discover-service-item-description,
-	.discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-name {
-		font-size: 14px;
-	}
-	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
-		font-size: 18px;
-	}
-	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
-		font-size: 15px;
-	}
-}
+/*@media (max-width: 335px) {*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-description,*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-name {*/
+/*		font-size: 14px;*/
+/*	}*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-footer {*/
+/*		font-size: 18px;*/
+/*	}*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-footer {*/
+/*		font-size: 15px;*/
+/*	}*/
+/*}*/
 
-@media (max-height: 525px) {
-	.discover-sub-title {
-		font-size: 16px;
-	}
-	.discover-people {
-		margin: 10px 0 5px 0;
-	}
-	.discover-people .discover-people-item .people-logo {
-		width: 60px;
-		height: 60px;
-	}
-	.discover-people .discover-people-item .people-name {
-		font-size: 16px;
-	}
-	.discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-logo {
-		height: 35px;
-		width: 35px;
-	}
-	.discover-service-wrapper .discover-service-item .discover-service-item-description, .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-name {
-		font-size: 14px;
-	}
-	.discover-service-wrapper .discover-service-item .discover-service-item-footer {
-		font-size: 18px;
-	}
-	.footer .navigation li a img {
-		width: 55px;
-		height: 55px;
-	}
-}
+/*@media (max-height: 525px) {*/
+/*	.discover-sub-title {*/
+/*		font-size: 16px;*/
+/*	}*/
+/*	.discover-people {*/
+/*		margin: 10px 0 5px 0;*/
+/*	}*/
+/*	.discover-people .discover-people-item .people-logo {*/
+/*		width: 60px;*/
+/*		height: 60px;*/
+/*	}*/
+/*	.discover-people .discover-people-item .people-name {*/
+/*		font-size: 16px;*/
+/*	}*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-description, .discover-service-wrapper .discover-service-item .discover-service-item-header .discover-service-item-header-name {*/
+/*		font-size: 14px;*/
+/*	}*/
+/*	.discover-service-wrapper .discover-service-item .discover-service-item-footer {*/
+/*		font-size: 18px;*/
+/*	}*/
+/*	.footer .navigation li a img {*/
+/*		width: 55px;*/
+/*		height: 55px;*/
+/*	}*/
+/*}*/
 
 @media (max-height: 445px) {
-	.discover-service-wrapper .discover-service-wrapper-item-block {
-		height: 33vh;
-		padding-top: inherit; /* 1:1 Aspect Ratio */
-		position: static;
-	}
+	/*.discover-service-wrapper .discover-service-wrapper-item-block {*/
+	/*	height: 33vh;*/
+	/*	padding-top: inherit; !* 1:1 Aspect Ratio *!*/
+	/*	position: static;*/
+	/*}*/
 
-	.discover-service-wrapper .discover-service-item {
-		position: static;
-	}
+	/*.discover-service-wrapper .discover-service-item {*/
+	/*	position: static;*/
+	/*}*/
 }
+
 @media (max-height: 408px) {
 	body, html {
 		opacity: 0;
+	}
+}
+
+
+@media screen and (min-aspect-ratio: 16/9) {
+	.discover-service-wrapper .discover-service-wrapper-item-block {
+		padding-top: 56.25%; /* 16:9 Aspect Ratio */
+	}
+}
+@media screen and (min-aspect-ratio: 4/3) {
+	.discover-service-wrapper .discover-service-wrapper-item-block {
+		padding-top: 75%; /* 4:3 Aspect Ratio */
+	}
+}
+@media screen and (min-aspect-ratio: 3/2) {
+	.discover-service-wrapper .discover-service-wrapper-item-block {
+		padding-top: 66.66%; /* 3:2 Aspect Ratio */
+	}
+}
+@media screen and (min-aspect-ratio: 8/5) {
+	.discover-service-wrapper .discover-service-wrapper-item-block {
+		padding-top: 62.5%; /* 8:5 Aspect Ratio */
 	}
 }
 
