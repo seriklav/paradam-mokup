@@ -170,36 +170,12 @@ ul,li {
     font-weight: bold;
     text-align: center;
 }
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
 .navigation {
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
 }
-
-/* HELPER */
-.mb-10 {
-    margin-bottom: 1em;
-}
-.show-in-big-device {
-    display: none;
-}
-.no-selected {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, currently
-                                  not supported by any browser */
-}
-/* END HELPER */
-
-
 
 .scale-container {
     position: absolute;
@@ -255,7 +231,8 @@ ul,li {
     background: radial-gradient(50% 743.88% at 50% 50%, #4D4D4D 0%, #000000 100%);
     border: 1px solid #2F2F2F;
     height: 22em;
-    max-width: 45vw;
+    width: 17em !important;
+    margin: 0 auto;
     display: flex!important;
     flex-direction: column;
     justify-content: space-between;
@@ -307,3 +284,27 @@ ul,li {
     color: #7FFF00;
     margin-right: 0.5em;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* HELPER */
+.mb-10 {
+    margin-bottom: 1em;
+}
+.show-in-big-device {
+    display: none;
+}
+.no-selected {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+/* END HELPER */
